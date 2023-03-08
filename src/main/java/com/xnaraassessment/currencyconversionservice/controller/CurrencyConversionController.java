@@ -17,7 +17,7 @@ public class CurrencyConversionController {
     private ConversionService conversionService;
 
 
-    @PostMapping("convert")
+    @PostMapping(name = "convert")
     public ConversionResponse convert(@RequestBody ConversionRequest conversionRequest){
 
         return conversionService.convert(conversionRequest);
